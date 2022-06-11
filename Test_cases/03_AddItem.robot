@@ -7,7 +7,13 @@ Resource    ../Resources/Paying.robot
 Resource    ../Resources/LoginPageNewUser.robot
 
 *** Test Cases ***
-Add items to cart
+Add items 1 to cart
     Open shop main page
-    Add to Cart
-    Add next to Cart
+    Select sieze1
+    Select color1
+    Add to Cart1
+Add items 2 to cart
+    Select dress2
+    Select sieze2
+    Select color2
+    Add to Cart2
