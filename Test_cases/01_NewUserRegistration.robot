@@ -1,6 +1,6 @@
 *** Settings ***
-Library   SeleniumLibrary
-Library    BuiltIn
+#Library   SeleniumLibrary
+#Library    BuiltIn
 Resource    ../Resources/LoginPageNewUser.robot
 Resource    ../Resources/RegistrationFormPage.robot
 Test Teardown   Close all browsers

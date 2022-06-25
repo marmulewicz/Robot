@@ -15,6 +15,7 @@ ${email_login}      id:email
 ${password_login_field}       id:passwd
 ${submit_login_button}      id:SubmitLogin
 ${error_msg_field}          //body[@id='authentication']/div[@id='page']/div[@class='columns-container']/div[@id='columns']/div[@class='row']/div[@id='center_column']/div[1]
+${sign_out}     //a[@class='logout']
 #registration page locators
 ${sing_in_button}  class:login
 ${email_form_field}      id:email

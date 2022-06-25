@@ -1,6 +1,6 @@
 *** Settings ***
-Library   SeleniumLibrary
-Library    BuiltIn
+#Library   SeleniumLibrary
+#Library    BuiltIn
 Resource    ../Resources/LoginPageNewUser.robot
 Resource    ../Resources/RegistrationFormPage.robot
 Resource    ../Resources/UserLogin.robot
@@ -26,3 +26,4 @@ Login
     Enter user email address
     Enter user password
     Click submit account button
+    Sign out
