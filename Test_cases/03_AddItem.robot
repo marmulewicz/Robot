@@ -1,6 +1,6 @@
 *** Settings ***
-Library   SeleniumLibrary
-Library    BuiltIn
+#Library   SeleniumLibrary
+#Library    BuiltIn
 Resource    ../Resources/UserLogin.robot
 Resource    ../Resources/BuyItem.robot
 Resource    ../Resources/Paying.robot
@@ -18,9 +18,6 @@ Add dress
         Add Item To Cart
         Proceed To Summary
         Pay
-
-
-
 
 
 #Add items 1 to cart
