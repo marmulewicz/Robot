@@ -13,7 +13,8 @@ Sign in page
 Enter a new email address
     Input Text      ${new_email_field}      ${new_user_email}
     Click Element   ${submit_create_button}
-
+Return main page
+    Click Element   ${main_return}
 
 
 
