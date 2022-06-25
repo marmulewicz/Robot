@@ -1,13 +1,11 @@
 *** Settings ***
-#Library   SeleniumLibrary
-#Library    BuiltIn
-Resource    ../Resources/UserLogin.robot
+Resource    ../Resources/MainPage.robot
 Resource    ../Resources/BuyItem.robot
 Resource    ../Resources/Paying.robot
-Resource    ../Resources/LoginPageNewUser.robot
-
+Resource    ../Resources/LoginPage.robot
+Test Teardown   Close all browsers
 *** Test Cases ***
-Add dress
+Add dress & Pay
         Open shop main page
         Sign in page
         Enter user email address
@@ -18,6 +16,16 @@ Add dress
         Add Item To Cart
         Proceed To Summary
         Pay
+
+
+
+
+
+
+
+
+
+
 
 
 #Add items 1 to cart

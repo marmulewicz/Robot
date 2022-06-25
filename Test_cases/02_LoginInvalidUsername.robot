@@ -1,9 +1,7 @@
 *** Settings ***
-#Library   SeleniumLibrary
-#Library    BuiltIn
-Resource    ../Resources/LoginPageNewUser.robot
+Resource    ../Resources/MainPage.robot
+Resource    ../Resources/LoginPage.robot
 Resource    ../Resources/RegistrationFormPage.robot
-Resource    ../Resources/UserLogin.robot
 Test Teardown   Close all browsers
 *** Test Cases ***
 Invalid user email login

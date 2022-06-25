@@ -5,8 +5,8 @@ Resource    ../Page_objects/Locators.robot
 Resource    ../Page_objects/Variables.robot
 *** Keywords ***
 Enter your personal information
-    Wait Until Element Is Visible   ${mr_button}
     Set Selenium Speed          0.3
+    Wait Until Element Is Visible   ${mr_button}
     Click Button   ${mr_button}
     Input Text     ${first_name_field}       ${first_name}
     Input Text     ${last_name_field}       ${last_name}

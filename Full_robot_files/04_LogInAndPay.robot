@@ -1,9 +1,9 @@
 *** Settings ***
 Library   SeleniumLibrary
 Library    BuiltIn
-Resource    ../Resources/LoginPageNewUser.robot
+Resource    LoginPageUser.robot
 Resource    ../Resources/RegistrationFormPage.robot
-Resource    ../Resources/LoginPageNewUser.robot
+Resource    LoginPageUser.robot
 Test Teardown   Close all browsers
 *** Test Cases ***
 Login

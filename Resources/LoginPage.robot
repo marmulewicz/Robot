@@ -5,11 +5,6 @@ Resource    ../Page_objects/Locators.robot
 Resource    ../Page_objects/Variables.robot
 
 *** Keywords ***
-Open shop main page
-    Open Browser    ${shopurl}     ${browser}
-    Maximize Browser Window
-Sign in page
-    Click Element    ${sing_in_button}
 Enter a new email address
     Set Selenium Speed          0.3
     Input Text      ${new_email_field}      ${new_user_email}
@@ -20,6 +15,17 @@ Return main page
 Sign out
     Set Selenium Speed          0.3
     Click Element   ${sign_out}
-
+Enter user email address
+    Input Text     ${email_login}       ${login}
+Enter invalid user email address
+    Input Text      ${email_login}       ${invalid_user_email}
+Enter user password
+    Input Text      ${password_login_field}       ${password}
+Enter user invalid password
+    Input Text      ${password_login_field}       ${short_password}
+Click submit account button
+    Click Element  ${submit_login_button}
+Error messages validation
+    Page Should Contain Element      ${error_msg_field}
 
 
