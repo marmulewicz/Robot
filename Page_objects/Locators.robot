@@ -5,6 +5,7 @@ Library    BuiltIn
 *** Variables ***
 #shop url
 ${shopurl}  http://automationpractice.com/index.php
+${main_return}  //img[@class='logo img-responsive']
 #main locators
 ${sign_in_button}  class:login
 #login page locators
@@ -50,3 +51,6 @@ ${checkbox}  id:cgv
 ${processCarrier}  name:processCarrier
 ${pay}  class:bankwire
 ${confirm}  xpath://body/div[@id='page']/div[2]/div[1]/div[3]/div[1]/form[1]/p[1]/button[1]
+${ITEM_IMG}                                 //*[@id="homefeatured"]/li[1]/div/div[1]/div/a[1]/img
+${ITEM_ADD_TO_CART_BTN}                     //*[@id="homefeatured"]/li[1]/div/div[2]/div[2]/a[1]/span
+${PROCEED_TO_SUMMARY}                       //span[contains(text(),'Proceed to checkout')]

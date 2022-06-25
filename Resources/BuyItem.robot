@@ -26,9 +26,10 @@ Add to Cart1
     Set Selenium Speed          0.5
     Wait Until Element Is Enabled    ${cart}
     Click Element   ${cart}
-    Wait Until Element Is Enabled    ${continue}
+    #Wait Until Element Is Enabled    ${continue}
+    Set Focus To Element    ${continue}
     Click Element   ${continue}
-    Reload Page
+    #Reload Page
     #Click Element   ${continue_shopping}
     #Click Element   ${main_page_return}
 Next Search
@@ -52,3 +53,14 @@ Add to Cart2
     Wait Until Element Is Enabled    ${continue}
     Reload Page
     Click Element   ${main_page_return}
+Locate Item
+    Wait Until Element Is Visible                           ${ITEM_IMG}
+    Scroll Element Into View                                ${ITEM_IMG}
+Add Item To Cart
+    Mouse Over                                              ${ITEM_IMG}
+    Wait Until Element Is Visible                           ${ITEM_ADD_TO_CART_BTN}
+    Scroll Element Into View                                ${ITEM_ADD_TO_CART_BTN}
+    Click Element                                           ${ITEM_ADD_TO_CART_BTN}
+Proceed To Summary
+    Wait Until Element Is Visible                           ${PROCEED_TO_SUMMARY}
+    Click Element                                           ${PROCEED_TO_SUMMARY}
